@@ -1,0 +1,24 @@
+import { ApiClientBase, SwaggerResponse } from 'api/utils/ApiClientExtensions'
+
+export class ApiException extends Error {
+  public message: string;
+  public status: number;
+  public response: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public headers: { [key: string]: any };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public result: any;
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public constructor(message: string, status: number, response: string, headers: { [key: string]: any }, result: any) {
+    super();
+
+    this.message = message;
+    this.status = status;
+    this.response = response;
+    this.headers = headers;
+    this.result = result;
+  }
+}
+
+export { SwaggerResponse }

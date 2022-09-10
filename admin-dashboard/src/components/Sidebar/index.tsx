@@ -17,7 +17,7 @@ const Sidebar: React.FC = () => {
     >
       <div className="flex self-center justify-center mt-10 mb-20">
         <Link to="/">
-          <Logo className="fill-gray-400 w-28 h-auto  " />
+          <Logo className="fill-red-600 w-28 h-auto  " />
         </Link>
       </div>
       <Navbar />
