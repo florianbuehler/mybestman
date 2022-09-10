@@ -15,7 +15,10 @@ export class SwaggerResponse<TResult> {
 }
 
 export class ApiClientBase {
+  private readonly _configuration: null;
+
   public constructor(configuration: null) {
+    this._configuration = configuration;
   }
 
   // noinspection JSUnusedLocalSymbols
@@ -27,5 +30,4 @@ export class ApiClientBase {
   public transformOptions(options: RequestInit): Promise<RequestInit> {
     return Promise.resolve(options);
   }
-
 }
