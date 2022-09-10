@@ -1,15 +1,14 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import { Sidebar } from './index';
 
-type Props = {
-  children: React.ReactNode;
-};
-
-const Layout: React.FC<Props> = ({ children }) => {
+const Layout: React.FC = () => {
   return (
     <div className="flex">
       <Sidebar />
-      <main>{children}</main>
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 };

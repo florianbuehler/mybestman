@@ -1,11 +1,16 @@
 import React from 'react';
+import { Navigate, Routes, Route } from 'react-router-dom';
 import { Layout } from 'components';
 
 function App() {
   return (
-    <Layout>
-      <h1 className="text-3xl font-bold underline text-gray-500">Hello world!</h1>
-    </Layout>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Navigate to="orders" replace />} />
+        <Route path="orders" element={<h1>orders</h1>} />
+      </Route>
+      <Route path="*" element={<h2>Not Found</h2>} />
+    </Routes>
   );
 }
 
