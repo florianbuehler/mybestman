@@ -4,7 +4,7 @@
   "documentGenerator": {
     "fromDocument": {
       "json": "",
-      "url": "BackendApi.json",
+      "url": "BackendApi.yaml",
       "output": null
     }
   },
