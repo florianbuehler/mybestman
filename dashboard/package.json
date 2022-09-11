@@ -1,11 +1,11 @@
 {
-  "name": "admin-dashboard",
-  "description": "mybestman admin dashboard",
+  "name": "dashboard",
+  "description": "mybestman dashboard",
   "version": "1.0.0",
   "private": false,
   "keywords": [
     "mybestman",
-    "admin dashboard"
+    "dashboard"
   ],
   "scripts": {
     "start": "react-scripts start",
